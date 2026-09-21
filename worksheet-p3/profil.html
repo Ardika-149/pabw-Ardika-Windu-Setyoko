@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+KERANGKA AWAL — Halaman Profil Saya
+PABW 2026/2027 · Pertemuan 3
+Cara pakai:
+1. Salin berkas ini, ganti nama menjadi profil.html
+2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
+3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
+4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
+
+Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
+komentar itu adalah daftar periksa Anda sendiri.
+-->
+<html>
+<head>
+    <title>Data barang usaha Bersama</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    </head>
+    <body>
+
+    <header>
+        <h1>Daftar Barang</h1>
+        <nav>
+        <a href="#Daftar Barang">Daftar Barang</a>
+        <a href="#Tambah Barang">Tambah Barang</a>
+        <a href="#Stok Ketersediaan Barang">Stok Ketersediaan Barang</a>
+        </nav>
+    <header>
+
+        <main>
+
+        <section id="Tabel">
+            <h2>Nama Barang</h2>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+            <caption>Stok Barang Saat Ini</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Penambahan Barang</th>
+                    <th scope="col">Daftar Barang</th>
+                    <th scope="col">Stok Barang</th>
+                </tr>
+                <thead>
+                <tbody>
+                    <tr>
+                        <td>BRG-01</td>
+                        <td>Mie Instan</td>
+                        <td>pcs</td>
+                        <td>25</td>
+                </tr>
+                    <tr>
+                    <td>BRG-02</td>
+                    <td>Tepung Serbaguna</td>
+                    <td>pcs</td>
+                    <td>10</td>
+                    </tr>
+                <tr>
+                    <td>BRG-03</td>
+                    <td>Gula Kristal</td>
+                    <td>pcs</td>
+                    <td>5</td>
+                    </tr>
+                <tr>
+                    <td>BRG-04</td>
+                    <td>Minyak Goreng</td>
+                    <td>pcs</td>
+                    <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="Stok Barang.webP"
+                alt="Tumpukan mie instan, tepung serbaguna, dan gula kristal di rak stok" width="500" height="360" loading="lazy">
+                <figcaption> Stok barang usaha bersama di rak penyimpanan.</figcaption>
+            </figure>
+        </section>
+
+        <section id="form">
+            <h2>Tambah Barang</h2>
+
+            <form action="#"
+            method="post"
+            <p>
+                <label for="kode">Kode Barang</label><br>
+                <input type="text" id="kode" name="kode" required>
+            </p>
+
+                <p>
+                <label for="nama">Nama</label><br>
+                <input type="text" id="nama" name="nama" required>
+            </p>
+
+                </p>
+                <label for="jumlah">Jumlah Stok</label>
+                <input type="text" id="jumlah" name="jumlah" required>
+            </p>
+
+            <p>
+                <button type="submit">Simpan</button>
+            </p>
+        </form>
+    </section>
+
+    </main>
+
+    <footer id="owner">
+        <p>Ardika Windu Setyoko</p>
+        <p>NIM 25523207</p>
+        </footer>
+    </body>
+</html>

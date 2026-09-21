@@ -14,7 +14,7 @@ topik halaman saya : Daftar Stok Barang Usaha Bersama.
 - Tautan navigasi : Daftar Barang, Tambah Barang, Stok Ketersediaan Barang.
 - Dua Bagian Utama : Daftar Barang (tabel stok) dan Tambah Barang (form input).
 - Kolom tabel : Kode Barang, Nama Barang, Satuan, Jumlah Stok.
-- Gambar : (belum ditambahkan - akan diisi pad revisi berikutnya).
+- Gambar : Stok-barang.webp
 - Berkas halaman : worksheet-p3/Profil.html
 
 ## Catatan pengunaan AI
