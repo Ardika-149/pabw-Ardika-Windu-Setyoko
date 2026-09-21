@@ -1,7 +1,8 @@
 # pabw-Ardika-Windu-Setyoko
 Praktikum PABW
 # PABW-Ardika-Windu-Setyoko-25523207
-
+Nama : ARDIKA WINDU SETYOKO
+NIM  : 25523207
 repo ini membuat pekerjaan mata kuliah pengembangan aplikasi berbasis web, satu folder untuk setiap pertemuan.
 
 ## Pertemuan 3 - Halaman Profil saya
@@ -19,5 +20,5 @@ topik halaman saya : Daftar Stok Barang Usaha Bersama.
 
 ## Catatan pengunaan AI
 
-Tidak memakai AI. Srukutur halaman, tabel, dan form dikerjakan sendiri mengikuti woorksheet pertemuan 3
+Saya menggunakan AI untuk membantu menjelaskan cara cara dalam penginstall an git dikarenakan pada saat menginstall ada problem tidak bisa di run, dan menggunakan AI untuk croshcheck apakah code saya sudah benar atau belum dan jika salah saya minta penjelasaan nya untuk belajar mandiri.
 
