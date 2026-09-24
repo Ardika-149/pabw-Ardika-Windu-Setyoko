@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<!--
-KERANGKA AWAL — Halaman Profil Saya
-PABW 2026/2027 · Pertemuan 3
-Cara pakai:
-1. Salin berkas ini, ganti nama menjadi profil.html
-2. Ganti setiap tulisan TODO dengan isi milik Anda SENDIRI
-3. Simpan, lalu buka di peramban (F5 untuk memuat ulang)
-4. Kerjakan berurutan mengikuti Lembar B, C, D, dan E pada worksheet
-
-Jangan menghapus komentar TODO sebelum bagian itu Anda kerjakan —
-komentar itu adalah daftar periksa Anda sendiri.
--->
-<html>
+<html lang="id">
 <head>
     <title>Data barang usaha Bersama</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
     </head>
     <body>
+
+        <input type="checkbox" id="tema" class="pengalih-tema">
+        <label for="tema" class="tombol-tema">Tema Gelap</label>
 
     <header>
         <h1>Daftar Barang</h1>
         <nav>
-        <a href="#Daftar Barang">Daftar Barang</a>
-        <a href="#Tambah Barang">Tambah Barang</a>
-        <a href="#Stok Ketersediaan Barang">Stok Ketersediaan Barang</a>
+        <a href="#daftar-barang">Daftar Barang</a>
+        <a href="#tambah-barang">Tambah Barang</a>
+        <a href="#stok">Stok Ketersediaan Barang</a>
         </nav>
-    <header>
+    </header>
 
         <main>
 
         <section id="Tabel">
-            <h2>Nama Barang</h2>
+            <h2>daftar-barang</h2>
 
         <table border="1" cellpadding="5" cellspacing="0">
             <caption>Stok Barang Saat Ini</caption>
@@ -40,8 +36,9 @@ komentar itu adalah daftar periksa Anda sendiri.
                     <th scope="col">Penambahan Barang</th>
                     <th scope="col">Daftar Barang</th>
                     <th scope="col">Stok Barang</th>
+                    <th scope="col">Jumlah</th>
                 </tr>
-                <thead>
+            </thead>
                 <tbody>
                     <tr>
                         <td>BRG-01</td>
@@ -83,12 +80,12 @@ komentar itu adalah daftar periksa Anda sendiri.
             <form action="#"
             method="post"
             <p>
-                <label for="kode">Kode Barang</label><br>
+                <label for="kode">Kode Barang</label>
                 <input type="text" id="kode" name="kode" required>
             </p>
 
                 <p>
-                <label for="nama">Nama</label><br>
+                <label for="nama">Nama</label>
                 <input type="text" id="nama" name="nama" required>
             </p>
 
