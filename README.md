@@ -17,6 +17,11 @@ topik halaman saya : Daftar Stok Barang Usaha Bersama.
 - Kolom tabel : Kode Barang, Nama Barang, Satuan, Jumlah Stok.
 - Gambar : Stok-barang.webp
 - Berkas halaman : worksheet-p3/Profil.html
+## Catatan pengunaan AI
+
+Saya menggunakan AI untuk membantu menjelaskan cara cara dalam penginstall an git dikarenakan pada saat menginstall ada problem tidak bisa di run, dan menggunakan AI untuk croshcheck apakah code saya sudah benar atau belum dan jika salah saya minta penjelasaan nya untuk belajar mandiri.
+
+  
 
 ## Pertemuan 4 - Merancang Tampilan dengan Design Token
 - berkas : tokens.css, base.css, layout.css, komponen.css, tema.css
@@ -30,6 +35,11 @@ topik halaman saya : Daftar Stok Barang Usaha Bersama.
   |--radius-md     | 0.5rem  | sudut tombol               |
   |--space-4       | 1rem    | jarak standar antar elemen |
 ## Catatan pengunaan AI
+Saya menggunakan AI untuk membantu beberapa bagian yang masih saya bingungkan bukan copas tetapi saya meminta penjelasan fungsi fungsi seperti
+-<div class > untuk apa
+-Nanya kenapa pesan "Kolom ini belum sah." tidak muncul padahal border input sudah merah. Ternyata blok CSS-nya masih dikomentari, dan ada spasi salah
+  di selector :has (input:user-invalid). Setelah diperbaiki baru jalan.
+- Debug pesan galat form yang tidak muncul (blok CSS masih dikomentari)
 
-Saya menggunakan AI untuk membantu menjelaskan cara cara dalam penginstall an git dikarenakan pada saat menginstall ada problem tidak bisa di run, dan menggunakan AI untuk croshcheck apakah code saya sudah benar atau belum dan jika salah saya minta penjelasaan nya untuk belajar mandiri.
+- Sisanya (token, tema gelap, layout, testing) saya kerjakan sendiri.
 
