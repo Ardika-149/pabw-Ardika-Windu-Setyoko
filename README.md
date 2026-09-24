@@ -19,8 +19,16 @@ topik halaman saya : Daftar Stok Barang Usaha Bersama.
 - Berkas halaman : worksheet-p3/Profil.html
 
 ## Pertemuan 4 - Merancang Tampilan dengan Design Token
+- berkas : tokens.css, base.css, layout.css, komponen.css, tema.css
+- warna utama : biru #1D3A8C, dipilih karena cocok dengan web yang saya buat
+- tema gelap memakai varian warna yang lebih terang agar tetap terlihat dan kontras nya aman
 
-
+  |Token           | Nilai   | Fungsi                     |
+  |--color-primary | #1D3A8C | tombol, tautan, penanda    |
+  |--color-fg      | #0F172A | teks utama                 |
+  |--color-bg      | #F8F4FC | latar halaman              |
+  |--radius-md     | 0.5rem  | sudut tombol               |
+  |--space-4       | 1rem    | jarak standar antar elemen |
 ## Catatan pengunaan AI
 
 Saya menggunakan AI untuk membantu menjelaskan cara cara dalam penginstall an git dikarenakan pada saat menginstall ada problem tidak bisa di run, dan menggunakan AI untuk croshcheck apakah code saya sudah benar atau belum dan jika salah saya minta penjelasaan nya untuk belajar mandiri.
