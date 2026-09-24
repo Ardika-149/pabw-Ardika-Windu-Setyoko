@@ -36,7 +36,7 @@ Saya menggunakan AI untuk membantu menjelaskan cara cara dalam penginstall an gi
   |--space-4       | 1rem    | jarak standar antar elemen |
 ## Catatan pengunaan AI
 Saya menggunakan AI untuk membantu beberapa bagian yang masih saya bingungkan bukan copas tetapi saya meminta penjelasan fungsi fungsi seperti
-- <div class > untuk apa
+- div class untuk apa
 - Nanya kenapa pesan "Kolom ini belum sah." tidak muncul padahal border input sudah merah. Ternyata blok CSS-nya masih dikomentari, dan ada spasi salah
   di selector :has (input:user-invalid). Setelah diperbaiki baru jalan.
 - Debug pesan galat form yang tidak muncul (blok CSS masih dikomentari)
