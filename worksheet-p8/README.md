@@ -1,36 +1,27 @@
-# Worksheet P6 - Responsif Mobile-First
-
-**Nama : ARDIKA WINDU SETYOKO
-**NIM : 25523207
-**Kelas : A
-** MATA KULIAH : Pengembangan Aplikasi Berbasis WEB
-\*\*Tanggal : 10/1/2026
-
-## DESKRIPSI
-
-ini lanjutan dari tugas P5, halaman nya masih sama , masih Profil.html, tidak buat halaman baru, yang berbeda yaitu ada tambahan file responsif.css fungsi nya agar tampilan enak di pandang dari HP, Tablet, Dekstop
-
-dan telah di uji pada : 360px, 768px, 1280px.
-
-Struktur Berkas
-worksheet-p5/
-├── Profil.html
-├── tokens.css
-├── base.css
-├── layout.css
-├── komponen.css
-├── tema.css
-├── responsif.css
+## worksheet-p8 ##
+Repositori ini berisi hasil pengerjaan Worksheet Pertemuan 3 sampai 7. Halaman profil.html terus dipakai dan disempurnakan
+tiap pertemuan — bukan halaman baru. 
+Dari HTML semantik, design token, layout flexbox/grid, responsif mobile-first, sampai JavaScript dasar.
+worksheet-p7/
+├── profil.html
+├── css/
+│   ├── tokens.css
+│   ├── base.css
+│   ├── layout.css
+│   ├── komponen.css
+│   ├── tema.css
+│   └── responsif.css
+├── js/
+│   └── app.js
 ├── 360px.png
 ├── 768px.png
 ├── 1280px.png
+├── Galat.png
+├── Setelah diperbaiki.png
+├── data tabel.png
 └── README.md
 
-#Catatan Penggunaan AI
-AI saya pakai buat nanya kalau stuck, bukan buat nyalin. Contohnya:
-
-- Kenapa halaman gak ke-load CSS-nya waktu dibuka lewat `file://` (ternyata harus pakai Live Server).
-- Bagian mana di `layout.css` yang bikin scroll ke samping di 360 px.
-- Kenapa kartu produk jadi satu huruf per baris di desktop (ternyata `12rem` di responsif.css, saya ganti jadi `5rem`).
-
-Sisanya saya kerjain sendiri: nulis `responsif.css`, nyisir CSS lama, screenshot, ngisi worksheet.
+Pengungkapan Penggunaan AI
+Saya sempat bingung kenapa typeof belumDibuat hasilnya "undefined", padahal variabelnya belum pernah saya tulis di kode. Setelah tanya AI, saya baru paham:
+- undefined itu tipe data bawaan JavaScript untuk variabel yang sudah dideklarasikan tapi belum diberi nilai,
+  atau properti yang tidak ada di sebuah object
