@@ -79,3 +79,5 @@ const inputJumlah = document.querySelector("#jumlah");
 if (inputJumlah) {
   console.log("Input + 1 =", Number(inputJumlah.value) + 1);
 }
+
+// periksa dan simpan
