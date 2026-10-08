@@ -66,6 +66,17 @@ console.table(selesai);
 const katalog = daftarBarang.find((barang) => barang.nama === "Katalog Produk");
 console.log(katalog);
 
+// bagian E
+console.log("Kota:", profil.alamat?.kota);
+
+const tombolTidakAda = document.querySelector("#tombol-tidak-ada");
+console.log("Tombol:", tombolTidakAda?.textContent);
+
+const inputJumlah = document.querySelector("#jumlah");
+if (inputJumlah) {
+  console.log("Input + 1 =", Number(inputJumlah.value) + 1);
+}
+
 const katalog = daftarProyek.find(
   (proyek) => proyek.judul === "Katalog Produk",
 );
