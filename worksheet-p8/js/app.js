@@ -25,3 +25,22 @@ const formatKeahlian = (daftar) => daftar.join(" · ");
 
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
+
+const daftarProyek = [
+  { judul: "Usaha Bersama", tahun: 2026, selesai: true },
+  { judul: "Mie Instan", tahun: 2026, selesai: false },
+  { judul: "tepung Serbaguna", tahun: 2026, selesai: false },
+  { judul: "Gula Kristal", tahun: 2026, selesai: false },
+  { judul: "Minyak Goreng", tahun: 2026, selesai: false },
+];
+
+console.table(profil.keahlian);
+console.table(daftarProyek);
+
+const selesai = daftarProyek.filter((proyek) => proyek.selesai);
+console.table(selesai);
+
+const katalog = daftarProyek.find(
+  (proyek) => proyek.judul === "Katalog Produk",
+);
+console.log(katalog);
