@@ -26,19 +26,45 @@ const formatKeahlian = (daftar) => daftar.join(" · ");
 console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
 
-const daftarProyek = [
-  { judul: "Usaha Bersama", tahun: 2026, selesai: true },
-  { judul: "Mie Instan", tahun: 2026, selesai: false },
-  { judul: "tepung Serbaguna", tahun: 2026, selesai: false },
-  { judul: "Gula Kristal", tahun: 2026, selesai: false },
-  { judul: "Minyak Goreng", tahun: 2026, selesai: false },
+const daftarBarang = [
+  {
+    kode: "BRG-01",
+    nama: "Mie Instan",
+    satuan: "pcs",
+    jumlah: 25,
+    selesai: true,
+  },
+  {
+    kode: "BRG-02",
+    nama: "Tepung Serbaguna",
+    satuan: "pcs",
+    jumlah: 10,
+    selesai: true,
+  },
+  {
+    kode: "BRG-03",
+    nama: "Gula Kristal",
+    satuan: "pcs",
+    jumlah: 5,
+    selesai: false,
+  },
+  {
+    kode: "BRG-04",
+    nama: "Minyak Goreng",
+    satuan: "pcs",
+    jumlah: 10,
+    selesai: true,
+  },
 ];
 
 console.table(profil.keahlian);
-console.table(daftarProyek);
+console.table(daftarBarang);
 
-const selesai = daftarProyek.filter((proyek) => proyek.selesai);
+const selesai = daftarBarang.filter((barang) => barang.selesai);
 console.table(selesai);
+
+const katalog = daftarBarang.find((barang) => barang.nama === "Katalog Produk");
+console.log(katalog);
 
 const katalog = daftarProyek.find(
   (proyek) => proyek.judul === "Katalog Produk",
