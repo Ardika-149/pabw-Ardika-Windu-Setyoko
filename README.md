@@ -89,6 +89,9 @@ worksheet-p7/
 ├── 360px.png
 ├── 768px.png
 ├── 1280px.png
+├── Galat.png
+├── Setelah diperbaiki.png
+├── data tabel.png
 └── README.md
 
 Pengungkapan Penggunaan AI
