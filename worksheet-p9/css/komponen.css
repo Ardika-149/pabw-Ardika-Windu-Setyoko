@@ -143,3 +143,10 @@ figure img {
 .papan {
   grid-row: span 2;
 }
+
+#filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
