@@ -60,6 +60,14 @@
         <section class="utama" id="daftar-barang">
           <h2>Daftar Barang</h2>
 
+          <div id="filter">
+            <button data-kategori="semua" class="aktif">Semua</button>
+            <button data-kategori="makanan">Makanan</button>
+            <button data-kategori="bahan-pokok">Bahan Pokok</button>
+            </div>
+
+            <p id="pesan-kosong" hidden>Maaf, data atau kategori barang tidak ditemukan.</p>
+
           <div class="tabel-wrapper">
           <table>
             <caption>Stok Barang Saat Ini</caption>
@@ -71,7 +79,8 @@
                 <th scope="col">Jumlah</th>
               </tr>
             </thead>
-            <tbody>
+
+            <tbody id="wadah-tabel">
               <tr>
                 <td>BRG-01</td>
                 <td>Mie Instan</td>
