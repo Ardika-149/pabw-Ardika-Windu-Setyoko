@@ -29,7 +29,7 @@ console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
 
 // Lembar D
-const daftarBarang = [
+export const daftarBarang = [
   {
     kode: "BRG-01",
     nama: "Mie Instan",
@@ -69,7 +69,7 @@ console.table(selesai);
 const katalog = daftarBarang.find((barang) => barang.nama === "Katalog Produk");
 console.log(katalog);
 
-// bagian E
+// Lembar E
 console.log("Kota:", profil.alamat?.kota);
 
 const tombolTidakAda = document.querySelector("#tombol-tidak-ada");
