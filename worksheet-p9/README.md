@@ -1,36 +1,31 @@
-# Worksheet P6 - Responsif Mobile-First
+## worksheet-p9
 
-**Nama : ARDIKA WINDU SETYOKO
-**NIM : 25523207
-**Kelas : A
-** MATA KULIAH : Pengembangan Aplikasi Berbasis WEB
-\*\*Tanggal : 10/1/2026
-
-## DESKRIPSI
-
-ini lanjutan dari tugas P5, halaman nya masih sama , masih Profil.html, tidak buat halaman baru, yang berbeda yaitu ada tambahan file responsif.css fungsi nya agar tampilan enak di pandang dari HP, Tablet, Dekstop
-
-dan telah di uji pada : 360px, 768px, 1280px.
-
-Struktur Berkas
-worksheet-p5/
-├── Profil.html
-├── tokens.css
-├── base.css
-├── layout.css
-├── komponen.css
-├── tema.css
-├── responsif.css
-├── 360px.png
-├── 768px.png
-├── 1280px.png
+Repositori ini berisi hasil pengerjaan Worksheet Pertemuan 9 mengenai manipulasi DOM, penanganan event (_event delegation_),
+dan pembuatan validasi form kustom. Halaman profil.html terus dipakai dan disempurnakan tiap pertemuan — bukan halaman baru.
+worksheet-p9/
+├── profil.html
+├── css/
+│ ├── tokens.css
+│ ├── base.css
+│ ├── layout.css
+│ ├── komponen.css
+│ ├── tema.css
+│ └── responsif.css
+├── js/
+│ ├── app.js
+│ └── dom.js
+├── galat.png
+├── setelah di perbaiki.png
+├── data tabel.png
 └── README.md
 
-#Catatan Penggunaan AI
-AI saya pakai buat nanya kalau stuck, bukan buat nyalin. Contohnya:
+Pengungkapan Penggunaan AI
+Saya sempat bingung kenapa waktu tombol filter diklik, daftar kartu proyeknya malah bertambah banyak dan berlipat ganda.
+Setelah tanya AI, saya baru paham:
 
-- Kenapa halaman gak ke-load CSS-nya waktu dibuka lewat `file://` (ternyata harus pakai Live Server).
-- Bagian mana di `layout.css` yang bikin scroll ke samping di 360 px.
-- Kenapa kartu produk jadi satu huruf per baris di desktop (ternyata `12rem` di responsif.css, saya ganti jadi `5rem`).
-
-Sisanya saya kerjain sendiri: nulis `responsif.css`, nyisir CSS lama, screenshot, ngisi worksheet.
+- Kalau fungsi render tidak mengosongkan wadah (seperti memakai `textContent = ''` atau `replaceChildren()`)
+  di baris pertamanya, data yang lama tidak akan terhapus, melainkan menumpuk terus dengan hasil saringan yang baru.
+- Selain itu, saya juga jadi paham kenapa `querySelector` bisa menghasilkan `null` — ternyata selain karena salah ketik huruf pada id atau kelas,
+  urutan penempatan tag `<script>` di bagian bawah HTML sangat menentukan apakah elemen sudah siap dibaca oleh JavaScript.
+- Untuk validasi form, penggunaan atribut `novalidate` di HTML yang dipadukan dengan `event.preventDefault()` di JavaScript sangat penting
+  agar peramban tidak melakukan _refresh_ halaman secara otomatis sebelum data input tervalidasi dengan benar.
