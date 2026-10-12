@@ -31,4 +31,36 @@ function render(daftar) {
   });
 }
 
-render(daftarBarang);
+const containerfilter = document.querySelector("#filter");
+const pesanKosong = document.querySelector("#pesan-kosong");
+
+if (containerfilter) {
+  containerfilter.addEventListener("click", (event) => {
+    const tombol = event.target.closest("button");
+    if (!tombol) return;
+
+    const kategori = tombol.getAttribute("data-kategori")?.toLowerCase();
+    console.log("Kategori dipilih:", kategori);
+
+    let dataSaringan = [];
+
+    if (kategori === "semua" || !kategori) {
+      dataSaringan = daftarBarang;
+    } else {
+      dataSaringan = daftarBarang.filter(
+        (barang) => barang.kategori?.toLowerCase() === kategori,
+      );
+    }
+
+    if (pesanKosong) {
+      if (dataSaringan.length === 0) {
+        pesanKosong.removeAttribute("hidden");
+      } else {
+        pesanKosong.setAttribute("hidden", "true");
+      }
+    }
+
+    render(dataSaringan);
+  });
+}
+
