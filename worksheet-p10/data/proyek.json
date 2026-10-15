@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "kode": "BRG-01",
+    "nama": "Mie Instan",
+    "satuan": "pcs",
+    "jumlah": 25,
+    "kategori": "makanan"
+  },
+  {
+    "id": 2,
+    "kode": "BRG-02",
+    "nama": "Tepung Serbaguna",
+    "satuan": "pcs",
+    "jumlah": 10,
+    "kategori": "bahan-pokok"
+  },
+  {
+    "id": 3,
+    "kode": "BRG-03",
+    "nama": "Gula Kristal",
+    "satuan": "pcs",
+    "jumlah": 5,
+    "kategori": "bahan-pokok"
+  },
+  {
+    "id": 4,
+    "kode": "BRG-04",
+    "nama": "Minyak Goreng",
+    "satuan": "pcs",
+    "jumlah": 10,
+    "kategori": "bahan-pokok"
+  }
+]
