@@ -1,4 +1,4 @@
-const ALAMAT = "data/proyek-salah.json";
+const ALAMAT = "https://raw.githubusercontent.com/Ardika-149/pabw-Ardika-Windu-Setyoko/refs/heads/main/worksheet-p10/data/proyek.json";
 
 export async function ambilProyek() {
   try {
