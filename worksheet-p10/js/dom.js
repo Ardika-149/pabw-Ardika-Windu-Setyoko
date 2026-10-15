@@ -1,5 +1,4 @@
 console.log("dom.js berhasil dimuat");
-// js/dom.js atau bagian render di app.js/dom.js
 import { daftarBarang } from "./app.js";
 
 const wadah = document.querySelector("#wadah-tabel");
