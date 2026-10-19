@@ -31,10 +31,27 @@ function buatKartuBarang(proyek) {
   const tdJumlah = document.createElement("td");
   tdJumlah.textContent = proyek.jumlah;
 
-  tr.append(tdKode, tdNama, tdSatuan, tdJumlah);
+  const tdFavorit = document.createElement("td");
+  const tombolFav = document.createElement("button");
+  tombolFav.className = "favorit";
+  tombolFav.dataset.id = proyek.id;
+  tombolFav.textContent = favorit.includes(proyek.id) ? "★" : "☆";
+  tdFavorit.appendChild(tombolFav);
+
+  tr.append(tdKode, tdNama, tdSatuan, tdJumlah, tdFavorit);
   return tr;
 }
 
+function tandaiTombolAktif(kategoriAktif) {
+  const tombolFilter = document.querySelectorAll("#filter button");
+  tombolFilter.forEach((tombol) => {
+    if (tombol.dataset.kategori === kategoriAktif) {
+      tombol.classList.add("aktif");
+    } else {
+      tombol.classList.remove("aktif");
+    }
+  });
+}
 export function render(state) {
   wadah.textContent = "";
   const tampil = saring(state.daftarProyek, state.kategoriAktif);
