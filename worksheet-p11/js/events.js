@@ -1,4 +1,4 @@
-import { pilihKategori } from "./state.js";
+import { pilihKategori, tambahFavorit } from "./state.js";
 
 export function pasangPendengar() {
   const containerfilter = document.querySelector("#filter");
@@ -6,10 +6,19 @@ export function pasangPendengar() {
     containerfilter.addEventListener("click", (event) => {
       const tombol = event.target.closest("button");
       if (!tombol) return;
-
       const kategori = tombol.getAttribute("data-kategori")?.toLowerCase();
-      console.log("Kategori dipilih:", kategori);
       pilihKategori(kategori);
+    });
+  }
+
+  const wadahTabel = document.querySelector("#wadah-tabel");
+  if (wadahTabel) {
+    wadahTabel.addEventListener("click", (event) => {
+      const tombolFav = event.target.closest(".favorit");
+      if (!tombolFav) return;
+
+      const id = Number(tombolFav.dataset.id);
+      tambahFavorit(id);
     });
   }
 
