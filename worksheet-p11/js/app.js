@@ -5,7 +5,6 @@ import { pasangPendengar } from "./events.js";
 
 async function mulai() {
   pasangPendengar();
-
   aturMemuat(true);
   try {
     const daftar = await ambilProyek();
