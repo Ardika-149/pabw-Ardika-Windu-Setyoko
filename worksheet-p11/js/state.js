@@ -17,7 +17,7 @@ export function pilihKategori(kategori) {
 }
 
 export function tambahFavorit(id) {
-    if (state.favorit.includes(id)) return;
-    state.favorit = [...state.favorit, id];
-    render(state);
+  if (state.favorit.includes(id)) return;
+  state.favorit = [...state.favorit, id];
+  render(state);
 }
