@@ -9,7 +9,6 @@ export function pasangPendengar() {
 
       const kategori = tombol.getAttribute("data-kategori")?.toLowerCase();
       console.log("Kategori dipilih:", kategori);
-
       pilihKategori(kategori);
     });
   }
