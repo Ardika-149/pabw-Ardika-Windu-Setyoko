@@ -16,7 +16,7 @@ export function tampilkanGalat(pesan) {
   }
 }
 
-function buatKartuBarang(proyek) {
+function buatKartuBarang(proyek, favorit = []) {
   const tr = document.createElement("tr");
 
   const tdKode = document.createElement("td");
@@ -35,6 +35,7 @@ function buatKartuBarang(proyek) {
   const tombolFav = document.createElement("button");
   tombolFav.className = "favorit";
   tombolFav.dataset.id = proyek.id;
+
   tombolFav.textContent = favorit.includes(proyek.id) ? "★" : "☆";
   tdFavorit.appendChild(tombolFav);
 
@@ -52,8 +53,11 @@ function tandaiTombolAktif(kategoriAktif) {
     }
   });
 }
+
 export function render(state) {
   wadah.textContent = "";
+  tandaiTombolAktif(state.kategoriAktif);
+
   const tampil = saring(state.daftarProyek, state.kategoriAktif);
 
   if (tampil.length === 0) {
@@ -67,6 +71,6 @@ export function render(state) {
   if (pesanKosong) pesanKosong.hidden = true;
 
   tampil.forEach((proyek) => {
-    wadah.append(buatKartuBarang(proyek));
+    wadah.append(buatKartuBarang(proyek, state.favorit || []));
   });
 }
