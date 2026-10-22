@@ -1,3 +1,4 @@
+export const profil = {
   nama: "Ardika Windu Setyoko",
   peran: "Pemilik Usaha Bersama",
 };
