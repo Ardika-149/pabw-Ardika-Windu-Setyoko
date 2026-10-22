@@ -2,22 +2,24 @@
   <section class="utama" id="daftar-barang">
     <h2>Daftar Barang</h2>
 
-    <!-- Memanggil komponen TombolFilter -->
     <TombolFilter />
 
     <button
       type="button"
       id="atur-ulang"
       style="margin-bottom: 12px; background: #b00020; color: white"
+      @click="aturUlang"
     >
       Atur Ulang
     </button>
-    <p id="pesan-kosong" hidden>
+
+    <p v-if="state.memuat">Memuat data...</p>
+    <p v-else-if="state.galat">{{ state.galat }}</p>
+    <p v-else-if="tampil.length === 0">
       Maaf, data atau kategori barang tidak ditemukan.
     </p>
-    <p id="muat" hidden>Memuat data...</p>
 
-    <div class="tabel-wrapper">
+    <div class="tabel-wrapper" v-else>
       <table>
         <caption>
           Stok Barang Saat Ini
@@ -31,9 +33,22 @@
             <th scope="col">Favorit</th>
           </tr>
         </thead>
-        <tbody id="wadah-tabel"></tbody>
+        <tbody id="wadah-tabel">
+          <tr v-for="proyek in tampil" :key="proyek.id">
+            <td>{{ proyek.kode }}</td>
+            <td>{{ proyek.nama }}</td>
+            <td>{{ proyek.satuan || "pcs" }}</td>
+            <td>{{ proyek.jumlah }}</td>
+            <td>
+              <button class="favorit" @click="tambahFavorit(proyek.id)">
+                {{ state.favorit.includes(proyek.id) ? "★" : "☆" }}
+              </button>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </div>
+
     <figure>
       <img
         src="/Stok Barang.webP"
@@ -48,5 +63,10 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
+import { state, aturUlang, tambahFavorit } from "../state.js";
+import { saring } from "../data.js";
 import TombolFilter from "./TombolFilter.vue";
+
+const tampil = computed(() => saring(state.daftarProyek, state.kategoriAktif));
 </script>
