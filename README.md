@@ -194,7 +194,36 @@ Repositori ini berisi hasil pengerjaan Worksheet Pertemuan 11 mengenai modularis
 ├── E-halaman-pulih.png 
 └── README.md
 
-Pengungkapan Penggunaan AI
-Pada pertemuan 11 ini saya lumayan terbantu oleh AI saat debugging karena ada banyak kendala error pada project saya dan saya sangat bingung,
-Tetapi AI disini murni saya pakai sebagai teman berdiskusi bukan diperuntuk an copas kode dari noll
-- Error bikin tabel hilang: Waktu nambahin fitur tombol bintang, tiba-tiba tabelnya kosong dan di Console muncul error merah Cannot read properties of undefined     (reading 'includes'). Saya bingung banget. Setelah tanya AI, ternyata masalahnya sepele: saya lupa nambahin properti favorit: [] di dalam objek state.js.          Makanya pas kode dom.js nyari data favorit, hasilnya undefined.
+
+# Worksheet P12
+worksheet-p12/
+├── public/
+│   ├── data/
+│   │   └── proyek.json
+│   └── (file gambar .webp)
+├── src/
+│   ├── components/
+│   │   ├── DaftarProyek.vue
+│   │   ├── FormKontak.vue
+│   │   ├── KepalaProfil.vue
+│   │   └── TombolFilter.vue
+│   ├── App.vue
+│   ├── api.js
+│   ├── data.js
+│   ├── main.js
+│   ├── state.js
+│   └── (6 file CSS P11)
+├── index.html
+├── package.json
+└── vite.config.js
+
+## Versi Node.js dan NPM
+- Node.js: v24.22.0
+- NPM: 11.19.1
+
+## Ukuran Sebelum dan Sesudah Build
+- Sebelum build (dev): ~554 kB / 9 requests
+- Sesudah build (dist): ~29.1 kB / 2-3 requests
+
+## Pengungkapan Penggunaan AI
+Pada pertemuan 12 ini, AI saya gunakan sebagai teman berdiskusi untuk membantu proses debugging (seperti memperbaiki error path gambar, masalah commit Git, dan konfigurasi state reactive). Struktur kode asli dari P11 saya porting sendiri, dan saya memahami alur pemecahan komponen menjadi 4 file terpisah.
